@@ -34,9 +34,5 @@
 [What is SQL](https://www.w3schools.com/sql/sql_intro.asp)<br>
 [History of SQL](https://www.ibm.com/think/topics/structured-query-language)<br>
 [Most Famous Databases in the world](https://www.geeksforgeeks.org/most-popular-databases/)<br>
-
-
-![How are you going](<img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
-))
 - - - - - - - 
 
