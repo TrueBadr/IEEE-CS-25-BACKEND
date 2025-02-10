@@ -41,6 +41,7 @@
 | Data is stored in a database management system (DBMS) as a file                                  | Tables are used to store information                                                                         |
 | Data is stored in a database management system (DBMS) in either a tabular or hierarchical format | Data is stored in a relational  database management system RDBMS only in a tabular format as column and rows |
 | Software and hardware requirements are minimal                                                   | Higher hardware and software requirements are required                                                       |
+|                                                                                                  |                                                                                                              |
 
 - - - - -  
 # *Naming Convenient*
@@ -53,6 +54,29 @@
     4. The Underscore , used to represent spaces 
 4. spaces , embedded characters , reserved names aren't allowed because they aren't portable
 - - - - - - - 
+# *primary keys vs unique keys*
+- **Primary Keys** is a column in a table that identifies each row in the table
+  and its unique for each row so there is no any duplicated values or null values in the primary key column and the whole table must have one primary key.
+- **Unique Keys** 
+  constraints also identify an individual row uniquely in a table. A table can have more than one unique key, unlike a primary key. Unique key constraints can accept only one NULL value for the column
+- -  - -- - 
+# *MySQL Constraints*
+- **SQL constraints** are used to specify rules for the data in a table. Constraints are used to limit the type of data that can go into a table. If there is any violation between the constraint and the data , the data insertion is cancelled. Constraints can be column level or table level. Column level constraints apply to a column, and table level constraints apply to the whole table.
+  ` Examples of Constrains in MySQL`
+1. - *NOT NULL* Ensures that a column cannot have a NULL value
+2. - *UNIQUE* - Ensures that all values in a column are different
+3. - *CHECK* - Ensures that the values in a column satisfies a specific condition
+ - - - - -  - - 
+#  *indexing in MySQL*
+- **Indexes** are used to find rows with specific column values quickly. Without an index, MySQL must begin with the first row and then search through the entire table to find the relevant rows. *The larger the table, the more this costs*. If the table has an index for the columns in question, MySQL can quickly determine the position to seek to in the middle of the data file without having to look at all the data. This is much faster than reading every row sequentially.
+- - - - -  
+# *Difference between MySQL and PostgreSQL*
+- **MySQL** and **PostgreSQL** are two of the most famous used open-source *RDBMS*.
+
+| **MySQL**                                                                                                     | **PostgreSQL**                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| MySQL is known for its speed and ease of use, making it ideal for *web applications* and read-heavy workloads | offers advanced features and strong data integrity by making it suitable for *complex queries* and *transactions* |
+- - - - - 
 ## ``References``
 [What is the Database](https://www.geeksforgeeks.org/what-is-database/)<br>
 [What is SQL](https://www.w3schools.com/sql/sql_intro.asp)<br>
@@ -61,5 +85,11 @@
 [What is RDBMS](https://www.geeksforgeeks.org/rdbms-full-form/)<br>
 [RDBMS Vs DBMS](https://unacademy.com/content/cbse-class-11/difference-between/dbms-and-rdbms/)<br>
 [Naming Conventions](https://www.red-gate.com/simple-talk/blogs/sql-naming-conventions/)<br>
+[primary keys vs unique keys](https://www.geeksforgeeks.org/difference-between-primary-key-and-unique-key/)<br>
+[constraints in MySQL](https://www.w3schools.com/mysql/mysql_constraints.asp)<br>
+[Indexes in MySQL](https://dev.mysql.com/doc/refman/8.4/en/mysql-indexes.html)<br>
+[Difference between MySQL and PostgreSQL](https://www.geeksforgeeks.org/difference-between-mysql-and-postgresql/)<br>
+
+
 - - - - - - - 
 
