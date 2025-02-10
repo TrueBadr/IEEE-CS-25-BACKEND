@@ -28,5 +28,5 @@ select sender_id, count(sender_id) as message_count from messages where  sent_da
 
 -- App Click-through Rate (CTR)
 
-
+select app_id,round(100.0*sum(CASE WHEN event_type = 'click' then 1 else 0 end)/sum(CASE WHEN event_type = 'impression' then 1 else 0 end),2) as CTR from events where TIMESTAMP >= '2022-01-01' and TIMESTAMP < '2023-01-01' group by app_id;
   
