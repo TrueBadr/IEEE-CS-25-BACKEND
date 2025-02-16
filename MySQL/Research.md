@@ -1,5 +1,5 @@
 # *What is the database*
-- a database is a collection of data stored and collected in a certain way and put into a software program that saves it and allow users to `manage` and r`etrieve` it called (**DBMS**) *Database Management System*.
+- a database is a collection of data stored and collected in a certain way and put into a software program that saves it and allow users to `manage` and `retrieve` it called (**DBMS**) *Database Management System*.
 - - - - -
 # *Why does the database exists*
 - database are so important to `manage` , `retrieve` and `organize` data easily and efficiently and help user to analyze the data to extracting beneficial information from it.
@@ -76,7 +76,24 @@
 | **MySQL**                                                                                                     | **PostgreSQL**                                                                                                    |
 | ------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | MySQL is known for its speed and ease of use, making it ideal for *web applications* and read-heavy workloads | offers advanced features and strong data integrity by making it suitable for *complex queries* and *transactions* |
+- - - - -  -
+# *Relationships in SQL*
+1.  `One-to-One` Relationship : Each record in Table A is associated with one and only one record in Table B, and vice versa.
+2. `One-to-Many` Relationship : Each record in Table A can be associated with multiple records in Table B, but each record in Table B is associated with only one record in Table A.
+3. `Many-to-Many `Relationship :Each record in Table A can be associated with multiple records in Table B, and vice versa.
+- - - - - - - 
+#  *Journaling or write-ahead logging*
+- **Journaling**, or **write-ahead logging** is a sophisticated solution to the problem of file system inconsistency in operating systems. Inspired by database management systems
 - - - - - 
+#  *Difference between Normalization and Denormalization*
+- Normalization and Denormalization are used to alter the structure of a database
+
+| Normalization                                                                   | Denormalization                                                     |
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| In normalization, Non-redundancy and consistency data are stored in set schema. | In denormalization, data are combined to execute the query quickly. |
+| Data integrity is maintained in normalization.                                  | Data integrity is not maintained in denormalization.                |
+| Normalization, Number of tables in increased                                    | Denormalization, Number of tables in decreased                      |
+- - - - - - - 
 ## ``References``
 [What is the Database](https://www.geeksforgeeks.org/what-is-database/)<br>
 [What is SQL](https://www.w3schools.com/sql/sql_intro.asp)<br>
@@ -89,6 +106,11 @@
 [constraints in MySQL](https://www.w3schools.com/mysql/mysql_constraints.asp)<br>
 [Indexes in MySQL](https://dev.mysql.com/doc/refman/8.4/en/mysql-indexes.html)<br>
 [Difference between MySQL and PostgreSQL](https://www.geeksforgeeks.org/difference-between-mysql-and-postgresql/)<br>
+[Relationships in SQL](https://www.geeksforgeeks.org/relationships-in-sql-one-to-one-one-to-many-many-to-many/)<br>
+[Journaling or write-ahead logging](https://www.geeksforgeeks.org/journaling-or-write-ahead-logging/)<br>
+[Difference between Normalization and Denormalization](https://www.geeksforgeeks.org/difference-between-normalization-and-denormalization/)<br>
+
+
 
 
 - - - - - - - 
