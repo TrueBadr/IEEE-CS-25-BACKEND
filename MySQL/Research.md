@@ -1,5 +1,5 @@
 # *What is the database*
-- a database is a collection of data stored and collected in a certain way and put into a software program that saves it and allow users to `manage` and `retrieve` it called (**DBMS**) *Database Management System*.
+- a database is a collection of data stored and collected in a certain way and put into a software program that saves it and allow users to `manage` and r`etrieve` it called (**DBMS**) *Database Management System*.
 - - - - -
 # *Why does the database exists*
 - database are so important to `manage` , `retrieve` and `organize` data easily and efficiently and help user to analyze the data to extracting beneficial information from it.
@@ -94,6 +94,35 @@
 | Data integrity is maintained in normalization.                                  | Data integrity is not maintained in denormalization.                |
 | Normalization, Number of tables in increased                                    | Denormalization, Number of tables in decreased                      |
 - - - - - - - 
+# *Multi-Version Concurrency Control*
+- **Multi-Version Concurrency Control (MVCC)** is a database optimization method, that makes redundant copies of records to allow for safe concurrent reading and updating of data. 
+- **Multi-Version Concurrency Control** is a technology, utilized to enhance databases by resolving concurrency problems and also data locking by preserving older database versions.
+- Types of **MVCC**
+     1. Timestamp-based MVCC
+     2. Snapshot-based MVCC
+     3. History-based MVCC
+     4. Hybrid MVCC
+- - - - - - 
+# *SQL Trigger*
+- **SQL triggers** are a critical feature in DBMS that provide automatic execution of a set of SQL statements when specific database events, such as `INSERT`, `UPDATE`, or `DELETE` operations
+- a **Trigger** is a collection of *SQL* statements with particular names that are stored in system memory.
+- Types of SQL Triggers
+     1. The *Data Definition Language* (DDL) command events such as Create_table, Create_view, drop_table , Drop_view and Alter_table
+     2. The *Data manipulation Language* (DML) command events that begin with Insert , Update, and Delete set off the DML triggers.
+- - - - - - 
+# *SQL BACKUP DATABASE*
+- The `BACKUP DATABASE` statement is used in SQL Server to create a full back up of an existing SQL database.
+```SQL
+     BACKUP DATABASE  DatabaseName
+     TO DISK = 'file';
+```
+- A differential back up only backs up the parts of the database that have changed since the last full database backup.
+```SQL
+     BACKUP DATABASE DatabaseName
+	 TO DISK = 'File'  
+	 WITH DIFFERENTIAL;
+```
+- - - - - - - 
 ## ``References``
 [What is the Database](https://www.geeksforgeeks.org/what-is-database/)<br>
 [What is SQL](https://www.w3schools.com/sql/sql_intro.asp)<br>
@@ -109,7 +138,9 @@
 [Relationships in SQL](https://www.geeksforgeeks.org/relationships-in-sql-one-to-one-one-to-many-many-to-many/)<br>
 [Journaling or write-ahead logging](https://www.geeksforgeeks.org/journaling-or-write-ahead-logging/)<br>
 [Difference between Normalization and Denormalization](https://www.geeksforgeeks.org/difference-between-normalization-and-denormalization/)<br>
-
+[Multi-Version Concurrency Control](https://www.geeksforgeeks.org/what-is-multi-version-concurrency-control-mvcc-in-dbms/)<br>
+[SQL Trigger](https://www.geeksforgeeks.org/sql-trigger-student-database/)<br>
+[SQL BACKUP DATABASE](https://www.w3schools.com/sql/sql_backup_db.asp)<br>
 
 
 
