@@ -12,7 +12,7 @@ select CASE when A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle' wh
 
 -- SQL Project Planning
 
-select START_DATE, a from (select b.START_DATE, MIN(c.END_DATE) as a FROM (select START_DATE from PROJECTS where START_DATE NOT IN (select END_DATE from PROJECTS)) b, (select END_DATE from PROJECTS where END_DATE NOT IN (select START_DATE from PROJECTS)) c where START_DATE < END_DATEGROUP BY b.START_DATE) d ORDER BY DATEDIFF(a, START_DATE), START_DATE;
+select START_DATE, a from (select b.START_DATE, MIN(c.END_DATE) as a FROM (select START_DATE from PROJECTS where START_DATE NOT IN (select END_DATE from PROJECTS)) b, (select END_DATE from PROJECTS where END_DATE NOT IN (select START_DATE from PROJECTS)) c where START_DATE < END_DATE GROUP BY b.START_DATE) d ORDER BY DATEDIFF(a, START_DATE), START_DATE;
 
 -- Average Population
 
