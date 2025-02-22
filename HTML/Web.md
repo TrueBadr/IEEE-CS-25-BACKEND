@@ -28,8 +28,8 @@
 - Each device connected to the Internet has a unique IP address which other machines use to find the device .
 - - - - - - 
 # `References`
-[How the Web Works](http://freecodecamp.org/news/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c/)<br>
-[How the Web Works](https://www.linkedin.com/pulse/how-web-works-steven-foote/)<br>
+[How the Web Works 1](http://freecodecamp.org/news/how-the-web-works-a-primer-for-newcomers-to-web-development-or-anyone-really-b4584e63585c/)<br>
+[How the Web Works 2](https://www.linkedin.com/pulse/how-web-works-steven-foote/)<br>
 [Http and Https](https://www.geeksforgeeks.org/difference-between-http-and-https/)<br>
 [Web Servers](https://www.geeksforgeeks.org/web-server-and-its-type/)<br>
 [DNS](https://www.cloudflare.com/learning/dns/what-is-dns/)<br>
