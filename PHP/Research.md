@@ -30,9 +30,24 @@
 - - - - - - - 
 # *Sensitivity in PHP*
 - PHP is **partially case-sensitive**. PHP constructs, function names, class names are case-insensitive, whereas variables are case-sensitive. A statement ends with a semicolon (;). Whitespace and line breaks don't matter in PHP.
-- - - -  
+- - - - - - 
+# *Assign By Value And By Reference*
+- in *PHP* the variables are by default assigned by the value i give value to a variable , then assign another variable with the first value , so the two variables has the same values and when i change one of them the other do not relate to the change .
+- another way to assign variables is assigning by reference where when i assign the second variable with the first with sign '&' now the connected with address so when i change one of them the other change also to the new value assigned.
+- - - - - 
+# *Static and Dynamic Typing: What Are the Main Differences*
+- when in a language define a variable there are two types of typing . In static languages i need to choose and write the specific type of data i need to assign like in C++ , Java , Rust ``` int X = 5 ```.
+- In Dynamic typing language you do not need to write the type of data you insert in IDE or text editor , the compiler itself will recognize the type of variable.
+- -- - - - 
+# *What’s the difference between Scripting and Programming Languages?*
+- a scripting language is  a language that uses a naive method to bring codes to a runtime environment like (Ruby , JavaScript , Python).
+- a programming language is a  language which is used by humans to navigate their communication with computers. (C++ , Java , PHP).
 # `Refrences`
 [What is PHP](https://www.geeksforgeeks.org/php-introduction/)<br>
 [what r the three main error types in PHP](https://www.geeksforgeeks.org/php-types-of-errors/)<br>
 [Echo Vs Print](https://www.geeksforgeeks.org/php-echo-print/)<br>
 [🌟sensitivity in PHP](https://www.phptutorial.net/php-tutorial/php-syntax/)<br>
+[Assign By Value And By Reference](https://elzero.org/php-2022-assign-by-value-and-by-reference/)<br>
+[Static and Dynamic Typing: What Are the Main Differences](https://www.linkedin.com/pulse/static-dynamic-typing-what-main-differences-parallelstaff-sgore/)<br>
+[What’s the difference between Scripting and Programming Languages ? ](https://www.geeksforgeeks.org/whats-the-difference-between-scripting-and-programming-languages/)<br>
+
