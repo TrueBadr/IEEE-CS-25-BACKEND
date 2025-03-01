@@ -1,6 +1,4 @@
 <?php
-echo gettype(100) ; // 1
-echo "\n";
 $n = 100;
-echo gettype($n); // 2
+echo gettype(100) . "\n" . gettype($n) . "\n" . var_dump(100);
 ?>
