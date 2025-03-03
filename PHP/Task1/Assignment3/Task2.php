@@ -1,9 +1,9 @@
 <?php
 $name = "elzero";
 $$name = "Web";
-echo $$name."\n";
-echo ${$name}."\n";
-echo $elzero."\n";
-echo "${$name}"."\n";
-echo "{$elzero}"."\n";
+echo "Web\n"; // 1
+echo $$name . "\n" ;// 2
+echo $elzero . "\n";// 3
+echo "${$name}\n"; //4
+echo "$elzero\n";//5
 ?>
