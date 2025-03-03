@@ -42,6 +42,18 @@
 # *What’s the difference between Scripting and Programming Languages?*
 - a scripting language is  a language that uses a naive method to bring codes to a runtime environment like (Ruby , JavaScript , Python).
 - a programming language is a  language which is used by humans to navigate their communication with computers. (C++ , Java , PHP).
+- - - - - - 
+# *What is the difference between for and Foreach loop in PHP ?*
+- The __for__ loop works at the end of the given condition. It is used for the implementation of variables and works in a single way. The __for__ loop does not work in the case of associative arrays and Consist of three portions or parts (initialized Variable , Condition , increment/decrement)
+- The *foreach* loop works at the end of the array count. This loop can work with variables as well as. Therefore, this loop can be implemented in more than one way.
+
+| **For**                                                                                                                                | **Foreach**                                                                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| The iteration is clearly visible. The block of code is repeated as long as the condition is met or the counter meets a specific value. | The iteration is hidden. The block of code is repeated until iterating over the array is completed. |
+| Good performance.                                                                                                                      | Better performance.                                                                                 |
+| The stop condition is specified easily.                                                                                                | The stop condition has to be explicitly specified.                                                  |
+
+- - - - - 
 # `Refrences`
 [What is PHP](https://www.geeksforgeeks.org/php-introduction/)<br>
 [what r the three main error types in PHP](https://www.geeksforgeeks.org/php-types-of-errors/)<br>
@@ -50,4 +62,5 @@
 [Assign By Value And By Reference](https://elzero.org/php-2022-assign-by-value-and-by-reference/)<br>
 [Static and Dynamic Typing: What Are the Main Differences](https://www.linkedin.com/pulse/static-dynamic-typing-what-main-differences-parallelstaff-sgore/)<br>
 [What’s the difference between Scripting and Programming Languages ? ](https://www.geeksforgeeks.org/whats-the-difference-between-scripting-and-programming-languages/)<br>
+[What is the difference between for and Foreach loop in PHP ?](https://www.geeksforgeeks.org/what-is-the-difference-between-for-and-foreach-loop-in-php/)<br>
 
