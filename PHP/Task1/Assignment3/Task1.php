@@ -1,4 +1,4 @@
-<?php $name = "IEEE Zagazig Courses" ?>
+<?php $name = "IEEE CS Trainings" ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
