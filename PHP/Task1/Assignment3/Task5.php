@@ -1,0 +1,14 @@
+<?php
+/*
+continue
+break
+echo
+print
+function
+clone
+class
+namespace
+if
+for
+*/
+?>
