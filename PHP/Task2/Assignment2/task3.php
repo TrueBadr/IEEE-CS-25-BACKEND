@@ -1,8 +1,7 @@
 <?php
-$n=2;
-while($n<528)
-{
-    echo $n . "\n";
-    $n = $n*2+2;
+$num = 2;
+while ($num < 520) {
+    if($num==2)$num=1;
+    echo $num."\n";
+    $num=2+($num*2);
 }
-?>
