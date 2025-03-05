@@ -1,26 +1,25 @@
 <?php
-$n=0;
-for($n=0;$n<=20;$n+=2)echo$n . "\n";
-?>
-
-
-<?php
-$n=0;
-while ($n<=20)
+$index=0;
+while($index<=20)
 {
-    echo $n . "\n";
-    $n+= 2;
+    echo $index."\n";
+    $index+=2;
 }
 ?>
 
-
 <?php
-$n=0;
+$index=0;
 do
 {
-    echo $n . "\n";
-    $n+=2;
-}
-while ($n<=20);
+    echo $index."\n";
+    $index+=2;
+}while($index<=20)
+
+?>
+
+
+<?php
+$index=0;
+for(;$index<=20;$index+=2)echo $index."\n";
 ?>
 
