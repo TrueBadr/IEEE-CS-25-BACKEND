@@ -1,10 +1,16 @@
 <?php
-$admins=["Badr","Mahmoud","Asmaa"];
-if ($_SERVER['REQUEST_METHOD'] === 'POST') 
+$admins = ["Badr", "Mahmoud", "Asmaa"];
+if($_SERVER['REQUEST_METHOD']=='POST')
 {
-    $username = $_POST['user'];
-    echo "The Request Method is Post and Username is $username<br>";
-    if (in_array($username, $admins))echo "This Username $username is Admin";
+    foreach ($admins as $admin)
+    {
+        if ($_POST['user']==$admin)
+        {
+            echo "The Request Method is Post and Name is ".$_POST['user']."\n";
+            echo "This Name ".$_POST['user']." is Admin";
+            break;
+        }
+    }
 }
 ?>
 <!DOCTYPE html>
