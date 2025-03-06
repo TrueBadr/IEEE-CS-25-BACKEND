@@ -52,7 +52,22 @@
 | The iteration is clearly visible. The block of code is repeated as long as the condition is met or the counter meets a specific value. | The iteration is hidden. The block of code is repeated until iterating over the array is completed. |
 | Good performance.                                                                                                                      | Better performance.                                                                                 |
 | The stop condition is specified easily.                                                                                                | The stop condition has to be explicitly specified.                                                  |
-
+- - - - - 
+# *What are the difference between session and cookies in PHP ?*
+- A **session** is a way to store information (in variables) to be used across multiple pages. When a user visits a website and starts a new session, the server creates a unique session ID and stores it in a cookie on the user’s computer
+- A **cookie** is a small piece of data that is stored in a user’s web browser. It can be used to store information such as user preferences or login information. When a user visits a website, the server can send a cookie to the user’s browser
+- - - - 
+# *Error handling in PHP*
+- PHP is used for web development. Error handling in PHP is almost similar to error handling in all programming languages. The default error handling in PHP will give file name line number and error type.
+- **Ways to handle PHP Errors:**  
+	- Using die() method
+	- Custom Error Handling
+- - - - - 
+# *How PHP Executes*
+- For the execution of PHP files, we have an interpreter called “PHP Interpreter”. It is based on the Zend engine. Zend engine compiled the PHP Script into Zend Opcodes.
+- Opcodes are short for Operation codes. It is low-level binary instructions.
+- These Opcodes are executed and HTML is sent to the client i.e. browser.
+- We need HTTP Protocol to accept the request and send the response to the browser.
 - - - - - 
 # `Refrences`
 [What is PHP](https://www.geeksforgeeks.org/php-introduction/)<br>
@@ -63,4 +78,6 @@
 [Static and Dynamic Typing: What Are the Main Differences](https://www.linkedin.com/pulse/static-dynamic-typing-what-main-differences-parallelstaff-sgore/)<br>
 [What’s the difference between Scripting and Programming Languages ? ](https://www.geeksforgeeks.org/whats-the-difference-between-scripting-and-programming-languages/)<br>
 [What is the difference between for and Foreach loop in PHP ?](https://www.geeksforgeeks.org/what-is-the-difference-between-for-and-foreach-loop-in-php/)<br>
-
+[What are the difference between session and cookies in PHP](https://www.geeksforgeeks.org/what-are-the-difference-between-session-and-cookies-in-php/)<br>
+[Error Handling in PHP](https://www.geeksforgeeks.org/error-handling-in-php/)<br>
+[PHP Code Execution](https://webkul.com/blog/php-code-execution-flow/)<br>
