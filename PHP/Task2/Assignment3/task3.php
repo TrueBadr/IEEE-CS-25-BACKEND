@@ -1,15 +1,20 @@
 <?php
-function sum_all(...$numbers)
+
+function sum_all(...$nums)
 {
-    $sum = 0;
-    foreach ($numbers as $number)
+    $nums=func_get_args();
+    $cnt=0;
+    foreach ($nums as $n )
     {
-            if ($number == 5 ) continue;
-        elseif ($number == 10) $number = 20;
-        $sum += $number;
+        if($n!=5)
+        {
+            if($n==10)$cnt+=20;
+            else $cnt+=$n;
+        }
     }
-    return $sum;
+    return $cnt;
 }
-echo sum_all(10, 12, 5, 6, 6, 10) . "\n";
-echo sum_all(5, 10, 5, 10) . "\n";
+
+echo sum_all(10, 12, 5, 6, 6, 10)."\n"; // 64
+echo sum_all(5, 10, 5, 10); // 40
 ?>
