@@ -1,9 +1,22 @@
 <?php
-function get_arguments()
+
+function get_arguments1(...$all1)
 {
-    $all_args = func_get_args();
-    return implode(" ", $all_args);
+    $all1 = func_get_args();
+    echo implode(" ",$all1)."\n";
 }
-echo get_arguments("Hello", "Elzero", "Web", "School")."\n";
-echo get_arguments("I", "Love", "PHP") . "\n";
+
+function get_arguments2(...$all2)
+{
+    $all2 = func_get_args();
+    foreach ($all2 as $a)
+    {
+        echo $a." ";
+    }
+    echo "\n";
+}
+
+echo get_arguments1("Hello", "Elzero", "Web", "School");
+echo get_arguments2("I", "Love", "PHP");
+
 ?>
