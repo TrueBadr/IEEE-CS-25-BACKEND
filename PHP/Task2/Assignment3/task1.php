@@ -1,11 +1,13 @@
 <?php
-function greeting($name, $gender = "") 
+
+function greeting($name , $gender="")
 {
-    if ($gender == "Male") return "Hello Mr $name";
-    elseif ($gender == "Female")return "Hello Miss $name";
-     else return "Hello $name";
+   if($gender=="Male")echo "Hello Mr $name\n";
+   elseif($gender=="Female")echo "Hello Miss $name\n";
+   elseif($gender==NULL)echo "Hello $name\n";
 }
-echo greeting("Osama", "Male") . "\n"; 
-echo greeting("Eman", "Female") . "\n";
-echo greeting("Sameh") . "\n";
+echo greeting("Mahmoud", "Male");
+echo greeting("Asmaa", "Female");
+echo greeting("Badr");
+
 ?>
