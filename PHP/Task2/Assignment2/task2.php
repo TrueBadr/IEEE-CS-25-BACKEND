@@ -2,7 +2,7 @@
 $index=0;
 while($index<=20)
 {
-    echo $index."\n";
+    if($index)echo $index."\n";
     $index+=2;
 }
 ?>
@@ -11,7 +11,7 @@ while($index<=20)
 $index=0;
 do
 {
-    echo $index."\n";
+    if($index)echo $index."\n";
     $index+=2;
 }while($index<=20)
 
@@ -20,6 +20,6 @@ do
 
 <?php
 $index=0;
-for(;$index<=20;$index+=2)echo $index."\n";
+for(;$index<=20;$index+=2)if($index)echo $index."\n";
 ?>
 
