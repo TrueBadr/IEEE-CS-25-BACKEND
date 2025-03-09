@@ -1,4 +1,4 @@
 <?php
 $friends=["Badr","Bassel","Byan","Ayman" , "John"];
-echo $friends[array_rand($friends)];
+echo $friends[rand(0,count($friends)-1)];
 ?>
