@@ -1,3 +1,5 @@
 <?php
-echo rand(10, 20);
+echo rand(9,21)."\n";
+echo rand(9,21)."\n";
+echo rand(9,21)."\n";
 ?>
