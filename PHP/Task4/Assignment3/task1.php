@@ -1,6 +1,8 @@
 <?php
-$end=time()+1209600;
-setcookie('site[layout]', 'boxed', $end, '/', 'localhost');
-setcookie('site[font]'  , 'Swat' , $end, '/', 'localhost');
-setcookie('site[color]' , 'blue' , $end, '/', 'localhost');
+setcookie('site[layout]', 'boxed', time()+1209600, '/', 'localhost');
+setcookie('site[font]'  , 'Swat' , time()+1209600, '/', 'localhost');
+setcookie('site[color]' , 'blue' , time()+1209600, '/', 'localhost');
+echo "<pre>";
+print_r($_COOKIE['site']);
+echo "</pre>";
 ?>
