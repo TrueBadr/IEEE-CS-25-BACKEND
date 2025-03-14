@@ -77,7 +77,7 @@
 # *MVC*
 - Over the last few years, websites have shifted from simple HTML pages with a bit of CSS to incredibly complex applications with thousands of developers working on them at the same time. To work with these complex web applications developers use different design patterns to lay out their projects, to make the code less complex and easier to work with. The most popular of these patterns is MVC also known as ****Model View Controller.****
 - The **MVC (Model View Controller)** framework is an architectural/design pattern that separates an application into three main logical components *Model*, *View*, and *Controller* Each architectural component is built to handle specific development aspects of an application.
- - ![[Pasted image 20250314144106.png]]
+ - ![[https://media.geeksforgeeks.org/wp-content/uploads/20220224160807/Model1.png]]
 - *Popular MVC Frameworks*
 	Some of the most popular and extensively used MVC frameworks are  Ruby on Rails , Django , CherryPy , Spring MVC , Laravel.
 - - - - - 
