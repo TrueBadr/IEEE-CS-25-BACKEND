@@ -36,7 +36,7 @@ Route::get('/welcome', function () {     return view('welcome'); });
     Group multiple routes with shared attributes like middleware or prefixes.
 - **Route Parameters:**  
     You can pass variables inside URLs:
-    ```PHP
+```PHP
 Route::get('/user/{id}', function ($id) {     return "User ID is " . $id; });
 ```
 - - - - 
