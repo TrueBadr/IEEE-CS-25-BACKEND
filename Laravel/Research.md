@@ -36,9 +36,9 @@ Route::get('/welcome', function () {     return view('welcome'); });
     Group multiple routes with shared attributes like middleware or prefixes.
 - **Route Parameters:**  
     You can pass variables inside URLs:
-```PHP
-Route::get('/user/{id}', function ($id) {     return "User ID is " . $id; });
-```
+    ```PHP
+    Route::get('/user/{id}', function ($id) {     return "User ID is " . $id; });
+    ```
 - - - - 
 # Facades
 - **Facade?**  
@@ -55,8 +55,20 @@ Route::get('/user/{id}', function ($id) {     return "User ID is " . $id; });
     You can replace Facades with dependency injection for better testing and flexibility.
 - **Testing with Facades:**  
     Laravel allows easy mocking of Facades using the `shouldReceive` method.
+
+- - - - 
+# Blade Templates
+- Blade is the simple, yet powerful templating engine that is included with Laravel. Unlike some PHP templating engines, Blade does not restrict you from using plain PHP code in your templates. In fact, all Blade templates are compiled into plain PHP code and cached until they are modified, meaning Blade adds essentially zero overhead to your application. Blade template files use the `.blade.php` file extension and are typically stored in the `resources/views` directory.
+- Blade views may be returned from routes or controllers using the global `view` helper. Of course, as mentioned in the documentation on views, data may be passed to the Blade view using the `view` helper's second argument:
+- - -- 
+# ORM
+- An **Object-Relational Mapper(ORM)** is a tool that bridges the gap between an application’s object-oriented programming language and a relational database. It allows developers to interact with the database using high-level programming abstractions rather than writing raw SQL queries. In essence, an ORM maps objects in code (such as classes and attributes) to database tables and columns, enabling developers to work with data as if they were working with native objects rather than rows and tables.
+- The primary purpose of an ORM is to simplify database interactions by providing an abstraction layer that converts data between the application’s object model and the relational model of a database. This allows developers to perform common database operations — such as creating, reading, updating, and deleting records (CRUD operations) — using familiar programming language constructs
 - - - - - 
 # `References`
 [Request Lifecycle](https://laravel.com/docs/12.x/lifecycle#http-console-kernels)<br>
 [Routing in Laravel](https://laravel.com/docs/12.x/routing)<br>
 [Facades in Laravel](https://laravel.com/docs/11.x/facades)<br>
+[Blade Templates](https://laravel.com/docs/12.x/blade)<br>
+[ORM](https://medium.com/@karthickrajaraja424/what-is-the-purpose-of-an-orm-and-what-are-its-advantages-ae3882e9e91e)<br>
+
