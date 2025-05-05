@@ -36,9 +36,11 @@ Route::get('/welcome', function () {     return view('welcome'); });
     Group multiple routes with shared attributes like middleware or prefixes.
 - **Route Parameters:**  
     You can pass variables inside URLs:
-    ```PHP
-    Route::get('/user/{id}', function ($id) {     return "User ID is " . $id; });
-    ```
+```PHP
+	Route::get('/user/{id}', function ($id) {     return "User ID is " . $id; });
+```
+
+
 - - - - 
 # Facades
 - **Facade?**  
@@ -65,10 +67,30 @@ Route::get('/welcome', function () {     return view('welcome'); });
 - An **Object-Relational Mapper(ORM)** is a tool that bridges the gap between an application’s object-oriented programming language and a relational database. It allows developers to interact with the database using high-level programming abstractions rather than writing raw SQL queries. In essence, an ORM maps objects in code (such as classes and attributes) to database tables and columns, enabling developers to work with data as if they were working with native objects rather than rows and tables.
 - The primary purpose of an ORM is to simplify database interactions by providing an abstraction layer that converts data between the application’s object model and the relational model of a database. This allows developers to perform common database operations — such as creating, reading, updating, and deleting records (CRUD operations) — using familiar programming language constructs
 - - - - - 
+# Eloquent: Relationships
+- Database tables are often related to one another. For example, a blog post may have many comments or an order could be related to the user who placed it. Eloquent makes managing and working with these relationships easy, and supports a variety of common relationships: (One to One , One to Many , Many to Many)
+- Eloquent relationships are defined as methods on your Eloquent model classes. Since relationships also serve as powerful query builders, defining relationships as methods provides powerful method chaining and querying capabilities. For example, we may chain additional query constraints on this `posts` relationship:
+- - -- - - 
+#  Understanding Sync, Attach and Detach in Laravel: Managing Relationships with Eloquent
+- In Laravel, the Eloquent ORM (Object-Relational Mapping) provides a powerful way to interact with our database tables. When working with relationships in Eloquent, we will often come across three essential methods: `sync`, `attach`, and `detach`. These methods are crucial for managing the relationships between models in our application.
+	1. **attach**: Adding Records to a Many-to-Many Relationship
+		- The `attach` method is primarily used in many-to-many relationships to add records to the pivot table that connects two models.
+	2. **detach**: Removing Records from a Many-to-Many Relationship
+		- Conversely, the `detach` method allows we to remove records from a many-to-many relationship's pivot table.
+	3. **sync**: Syncing Records in a Many-to-Many Relationship
+		- The `sync` method is a powerful way to synchronize the records in a many-to-many relationship. It takes an array of related model IDs as its argument and ensures that the pivot table contains only those records.
+- - - - 
+# N+1 Query Problem in Laravel: Causes, Effects, and Solutions
+- The N+1 query problem is a term that describes an inefficient way of database querying when our application produces a query for every related model. The name comes from the fact that we execute one query to load the parent model and then N queries to load each related model, where N is the number of parent models.
+- The main technique to solve N+1 query problem is called eager loading, which means loading the related models upfront, before looping through them. Laravel allows us to specify which relationships should be eager loaded using the with() method on the query builder.
+- - - - - 
 # `References`
 [Request Lifecycle](https://laravel.com/docs/12.x/lifecycle#http-console-kernels)<br>
 [Routing in Laravel](https://laravel.com/docs/12.x/routing)<br>
 [Facades in Laravel](https://laravel.com/docs/11.x/facades)<br>
 [Blade Templates](https://laravel.com/docs/12.x/blade)<br>
 [ORM](https://medium.com/@karthickrajaraja424/what-is-the-purpose-of-an-orm-and-what-are-its-advantages-ae3882e9e91e)<br>
+[Eloquent: Relationships](https://laravel.com/docs/11.x/eloquent-relationships)<br>
+[Understanding Sync, Attach and Detach in Laravel: Managing Relationships with Eloquent](https://medium.com/@rajvir.ahmed.shuvo/understanding-sync-attach-and-detach-in-laravel-managing-relationships-with-eloquent-394a7cf7fabd)<br>
+[N+1 Query Problem in Laravel: Causes, Effects, and Solutions](https://medium.com/@moumenalisawe/n-1-query-problem-in-laravel-causes-effects-and-solutions-740cefa44306)<br>
 
