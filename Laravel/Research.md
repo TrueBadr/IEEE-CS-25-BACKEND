@@ -109,10 +109,19 @@ Route::get('/welcome', function () {     return view('welcome'); });
 5. Laravel Socialite
 	- Laravel Socialite offers a simple, fluent interface for OAuth authentication with popular services. It handles the OAuth redirect and callback steps for you, significantly cutting boilerplate. Socialite has over 72 million downloads, reflecting how often developers use it to implement social logins
 
-
-
-
 - - - -- 
+# Laravel Gates
+- Laravel provides a wide range of features that make web development faster and more efficient. And one of the essential features of web development is authorization. In this article, we'll talk about one of the key authorize features: Gates.
+- Laravel Gates are a way to manage authorization in Laravel. Gates are closures that decide whether or not a user is allowed to perform a given action and are typically defined in the `app/providers/AuthServiceProvider` class using the `Gate` facade, which provides methods for defining and checking Gates. For example, you could create a Gate that only allows users with administrative privileges to access certain pages or features of your application.
+- - - -  
+# Sanctum vs Passport
+- **Laravel Sanctum**, introduced in Laravel 7, is a simple authentication package designed primarily for single-page applications (SPAs), mobile applications, and token-based APIs. It offers a lightweight solution that focuses on the **personal access token** and **cookie-based session authentication**.
+- **Laravel Passport** is an OAuth2 server implementation that offers more advanced API authentication than Sanctum. Passport was created to provide an **OAuth2 server** for Laravel applications, making it an ideal choice for apps requiring third-party access, token revocation, refresh tokens, and more advanced authentication flows.
+- - - - - 
+# Guard vs middleware
+- **Middleware** in Laravel functions as a filter for HTTP requests entering your application. Think of middleware as a checkpoint through which every request must pass. Middleware can inspect and modify requests before they reach your controllers, and even modify responses before they are sent back to the client.
+- **Gates** in Laravel are used to define authorization logic. Gates are simple closures that determine if a user can perform a specific action. They are defined in the `AuthServiceProvider` and can be used in controllers or views to check user permissions.
+- - - - - 
 # `References`
 [Request Lifecycle](https://laravel.com/docs/12.x/lifecycle#http-console-kernels)<br>
 [Routing in Laravel](https://laravel.com/docs/12.x/routing)<br>
@@ -125,3 +134,8 @@ Route::get('/welcome', function () {     return view('welcome'); });
 [What is the XSRF or CSRF ... is there a difference between them??](https://www.subrosacyber.com/en/blog/xsrf-vs-csrf)<br>
 [What is Livewire?](https://laravel-livewire.com/)<br>
 [Give examples and explain them in 3 lines at least about 5 packages that are most use in Laravel ](https://packagist.org/)<br>
+[ Laravel Gates ](https://www.twilio.com/en-us/blog/rapid-introduction-laravel-gates)<br>
+[ Sanctum vs Passport ](https://medium.com/@chirag.dave/laravel-sanctum-vs-passport-choosing-the-right-authentication-for-your-app-4438c85bf900)<br>
+[ Guard vs middleware ](https://medium.com/@kesen.somar.99/understanding-middleware-guards-and-gates-in-laravel-e2084cabc945)<br>
+- - - -- - 
+
