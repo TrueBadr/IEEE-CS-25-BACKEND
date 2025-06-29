@@ -1,3 +1,4 @@
+#SWE  #course #IEEE  #read #Laravel #Backend 
 # Request Lifecycle (Laravel)
 - **What is the Kernel?**  
     The Kernel is responsible for handling all incoming requests to the application, whether HTTP requests or Console (CLI) commands.
@@ -121,7 +122,28 @@ Route::get('/welcome', function () {     return view('welcome'); });
 # Guard vs middleware
 - **Middleware** in Laravel functions as a filter for HTTP requests entering your application. Think of middleware as a checkpoint through which every request must pass. Middleware can inspect and modify requests before they reach your controllers, and even modify responses before they are sent back to the client.
 - **Gates** in Laravel are used to define authorization logic. Gates are simple closures that determine if a user can perform a specific action. They are defined in the `AuthServiceProvider` and can be used in controllers or views to check user permissions.
-- - - - - 
+
+
+# n8n
+- **n8n** stands for "**n**ode-based **n**o-code." It’s an **open-source workflow automation tool** that allows you to connect different apps and services with ease. Think of it like a highly customizable, self-hosted version of Zapier , but with the added bonus of flexibility and control.
+- With n8n, you can : 
+	-  Automate tasks between 300+ apps and services (e.g., Slack, Google Sheets, Notion, GitHub).
+	-  Create custom workflows with **no code** or minimal code.
+	- Run workflows on your local server or in the cloud
+	- Use JavaScript functions and expressions to customize logic
+- **How Does n8n Work?** n8n is **node-based**, meaning each step (or action) in a workflow is a **node**. These nodes can be anything from sending an email, scraping a website, transforming data, or connecting to an API.
+- A typical n8n workflow includes   
+	1. **Trigger Node** – Starts the workflow
+	2.  **Action Nodes** – Performs tasks like sending messages, querying databases, or calling APIs
+	3. **Logic Nodes** – Adds conditions, loops, or code to control the workflow path
+- Use Case : n8n can automate a wide range of tasks across industries:
+	- **Marketing**: Automatically capture form responses and send emails.
+	- **Finance**: Fetch exchange rates and update financial spreadsheets daily.
+	- **E-commerce**: Update inventory across platforms when a sale is made.
+	- **Development**: Monitor GitHub commits and trigger CI/CD pipelines.
+	- **Data Science**: Pull in data from APIs, process it, and save it to a database or Google Sheet.
+
+-  - - - - 
 # `References`
 [Request Lifecycle](https://laravel.com/docs/12.x/lifecycle#http-console-kernels)<br>
 [Routing in Laravel](https://laravel.com/docs/12.x/routing)<br>
@@ -137,5 +159,6 @@ Route::get('/welcome', function () {     return view('welcome'); });
 [ Laravel Gates ](https://www.twilio.com/en-us/blog/rapid-introduction-laravel-gates)<br>
 [ Sanctum vs Passport ](https://medium.com/@chirag.dave/laravel-sanctum-vs-passport-choosing-the-right-authentication-for-your-app-4438c85bf900)<br>
 [ Guard vs middleware ](https://medium.com/@kesen.somar.99/understanding-middleware-guards-and-gates-in-laravel-e2084cabc945)<br>
+[n8n](https://www.linkedin.com/pulse/what-n8n-beginners-guide-workflow-automation-tool-sandaruwan-upfic/)<br>
 - - - -- - 
 
